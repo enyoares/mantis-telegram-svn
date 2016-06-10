@@ -1,6 +1,6 @@
 # mantis-telegram-svn
-
-# mantis 
+[TOC]
+## mantis 
 - cacert.pem
   - copy '\mantis\
 - telegramapi.php 
@@ -39,13 +39,13 @@ $g_source_control_fixed_regexp ="/\bfixed [#]{0,1}(\d+)\b/i";
   - edit BOT_TOKEN
   - edit chatID number
 
-#telegram
+##telegram
 make a bot id
 - https://www.youtube.com/watch?v=hJBYojK7DO4
 - https://core.telegram.org/bots#botfather
 
-#svn
+##svn
 - postcommit hook
 
-#cURL
+##cURL
 - https://curl.haxx.se/download.html
