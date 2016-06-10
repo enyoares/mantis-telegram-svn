@@ -70,7 +70,7 @@ FOR /F "tokens=*" %%i in ('svnlook date -r %REV% %REPOS%') do SET dt=%%i
 FOR /F "tokens=*" %%i in ('svnlook changed -r %REV% %REPOS% ') do SET changed=%%i
 FOR /F "tokens=*" %%i in ('svnlook log -r %REV% %REPOS%') do SET log=%%i
 
-curl -s -d user="%auth% %log%=Changeset [%REV%] %log%%changed%" http://222.122.176.23/core/checkincurl.php
+curl -s -d user="%auth% %log%=Changeset [%REV%] %log%%changed%" http://mysite.com/core/checkincurl.php
 
 echo --- debug output info ---
 echo *
