@@ -45,7 +45,42 @@ make a bot id
 - https://core.telegram.org/bots#botfather
 
 ##svn
-- postcommit hook
+- Post-commit hook
+```
+c:
+cd \VisualSVNServer\bin
+hook %1 %2
+```
+
+- hoot.bat
+```
+@echo off
+cls
+set REPOS=%1
+set REV=%2
+
+set auth =
+set log =
+set changed =
+set dt =
+set n='\n'
+
+FOR /F "tokens=*" %%i in ('svnlook author -r %REV% %REPOS%') do SET auth=%%i
+FOR /F "tokens=*" %%i in ('svnlook date -r %REV% %REPOS%') do SET dt=%%i
+FOR /F "tokens=*" %%i in ('svnlook changed -r %REV% %REPOS% ') do SET changed=%%i
+FOR /F "tokens=*" %%i in ('svnlook log -r %REV% %REPOS%') do SET log=%%i
+
+curl -s -d user="%auth% %log%=Changeset [%REV%] %log%%changed%" http://222.122.176.23/core/checkincurl.php
+
+echo --- debug output info ---
+echo *
+echo %auth%
+echo %dt%
+echo %log%
+echo %changed%
+echo *
+```
+
 
 ##cURL
 - https://curl.haxx.se/download.html
