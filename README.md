@@ -1,4 +1,5 @@
 # mantis-telegram-svn
+Environments : Window OS, APM
 
 ## mantis 
 - cacert.pem
