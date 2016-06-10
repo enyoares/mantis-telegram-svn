@@ -40,6 +40,9 @@ $g_source_control_fixed_regexp ="/\bfixed [#]{0,1}(\d+)\b/i";
   - edit chatID number
 
 #telegram
+make a bot id
+- https://www.youtube.com/watch?v=hJBYojK7DO4
+- https://core.telegram.org/bots#botfather
 
 #svn
-
+- postcommit hook
