@@ -9,7 +9,7 @@
   - edit WEBHOOK_URL
 - custom_function_api.php
   - add to code:
-  - ```
+```
 //{{ ejlee
 function custom_function_default_fixin( $p_issue_id, $p_comment, $p_file, $p_new_version, $p_fixed ) {
 	if( bug_exists( $p_issue_id ) ) {
