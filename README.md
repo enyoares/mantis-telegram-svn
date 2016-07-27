@@ -53,7 +53,7 @@ cd \VisualSVNServer\bin
 hook %1 %2
 ```
 
-- hoot.bat
+- hook.bat
 ```
 @echo off
 cls
